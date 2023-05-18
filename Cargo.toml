@@ -6,3 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serenity = { version = "0.11.5", features = ['async-tungstenite/tokio-native-tls' , 'http', 'utils','builder' ,'client' ,'collector' , 'framework' ,'gateway']}
+dotenv = {version =  "0.15.0"}
+tokio = { version = "1.28.1", features = ['full']}
+serde = { version = "1.0.99" , features = ['derive']}
+serde_json = {version = "1.0.96", features = ["default"]}
